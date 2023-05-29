@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniprojekt</title>
+</head>
+<body>
+    <div class="formular">
+        <h1>Databáze jmén</h1>
+        <form class="test-form">
+             <input type="text" class="jmeno" name="firstName" placeholder="Vypiš jméno">
+             <br>
+             <div class="checkbox">
+                <label for="chbox">Je mi více než 18 let?</label>
+                <input type="checkbox" class="my-checkbox" id="chbox">
+            </div>
+             <br>
+             <input type="submit" class="odeslat">
+        </form>
+        
+        <button class="btn">Vypiš</button>
+
+        <div class="list-names"></div>
+</div>
+
+    <script src="uuidv4.js"></script>
+    <script src="functions.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
