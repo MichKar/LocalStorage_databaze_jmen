@@ -5,9 +5,9 @@ const names = getSavedNames()
 let myForm = document.querySelector(".test-form")
 let myCheckbox = document.querySelector(".my-checkbox")
 
-myForm.addEventListener("submit", function(e){
+myForm.addEventListener("submit", function (e) {
     e.preventDefault()
-    
+
     names.push({
         id: uuidv4(),
         firstName: e.target.elements.firstName.value,
@@ -21,18 +21,17 @@ myForm.addEventListener("submit", function(e){
 // Vypsání jmén do stránky
 
 let btn = document.querySelector(".btn")
-btn.addEventListener("click", function(e){
+btn.addEventListener("click", function (e) {
     document.querySelector(".list-names").textContent = ""
     let myFormFromLS = JSON.parse(localStorage.getItem("names"))
 
-    myFormFromLS.forEach(function(myName){
-      const oneNameHTML = generateHTMLstructure(myName)  
-      document.querySelector(".list-names").appendChild(oneNameHTML)
+    myFormFromLS.forEach(function (myName) {
+        const oneNameHTML = generateHTMLstructure(myName)
+        document.querySelector(".list-names").appendChild(oneNameHTML)
     })
 })
 
 // Refresh stránky
-window.addEventListener("storage", function(){
+window.addEventListener("storage", function () {
     lacation.reload()
-
 })

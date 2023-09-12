@@ -4,17 +4,15 @@
 
 .formular {
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 300px;
     height: 800px;
-   
 }
 
 .formular h1 {
     color: white;
     text-align: center;
     padding: 10px 15px;
- 
 }
 
 .test-form .jmeno {
@@ -27,8 +25,8 @@
     margin: 0 auto;
     outline: none;
     margin-left: 30px;
-   
 }
+
 .checkbox {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -66,7 +64,6 @@
 .list-names {
     margin: 20px;
 }
-
 
 .list-names button {
     background-color: rgb(110, 10, 10);
